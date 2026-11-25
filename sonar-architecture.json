@@ -1,0 +1,17 @@
+{
+  "perspectives": [
+    {
+      "label": "Middleware layers",
+      "description": "Keep the middleware independent of the DB.",
+      "language": "python",
+      "qualifiers": "namespace",
+      "groups": [
+        { "label": "Middleware",    "patterns": ["core/middleware.py"] },
+        { "label": "DB", "patterns": ["db/**"] }
+      ],
+      "constraints": [
+        { "from": "Middleware", "to": "DB" }
+      ]
+    }
+  ]
+}
